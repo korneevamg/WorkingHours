@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/kw_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:text="TextView"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mo_day_background"
+        style="@style/day_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kw_number" />
+
+    <TextView
+        android:id="@+id/mo_day_data"
+        style="@style/day_style"
+        android:text="01.01.2018"
+        app:layout_constraintBottom_toBottomOf="@+id/mo_day_background"
+        app:layout_constraintStart_toStartOf="@+id/mo_day_background"
+        app:layout_constraintTop_toTopOf="@+id/mo_day_background"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+        android:id="@+id/mo_working_hours"
+        style="@style/working_hours_style"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/mo_day_background"
+        app:layout_constraintStart_toEndOf="@+id/mo_day_data"
+        app:layout_constraintTop_toTopOf="@+id/mo_day_background"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <ImageView
+        android:id="@+id/mo_edit"
+        style="@style/edit_button"
+        android:background="@drawable/edit_img"
+        android:onClick="editWorkingHours"
+        app:layout_constraintBottom_toBottomOf="@+id/mo_day_background"
+        app:layout_constraintEnd_toEndOf="@+id/mo_day_background"
+        app:layout_constraintTop_toTopOf="@+id/mo_day_background"
+        app:layout_constraintVertical_bias="0.0" />
+
+ <!--TUESDAY-->
+
+    <ImageView
+        android:id="@+id/tue_day_background"
+        style="@style/day_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mo_day_background" />
+
+    <TextView
+        android:id="@+id/tue_day_data"
+        style="@style/day_style"
+        android:text="01.02.2018"
+        app:layout_constraintBottom_toBottomOf="@+id/tue_day_background"
+        app:layout_constraintStart_toStartOf="@+id/tue_day_background"
+        app:layout_constraintTop_toTopOf="@+id/tue_day_background" />
+
+    <TextView
+        android:id="@+id/tue_working_hours"
+        style="@style/working_hours_style"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/tue_day_background"
+        app:layout_constraintStart_toEndOf="@+id/tue_day_data"
+        app:layout_constraintTop_toTopOf="@+id/tue_day_background" />
+
+    <ImageButton
+        android:id="@+id/tue_edit"
+        style="@style/edit_button"
+        app:layout_constraintBottom_toBottomOf="@+id/tue_day_background"
+        app:layout_constraintEnd_toEndOf="@+id/tue_day_background"
+        app:layout_constraintTop_toTopOf="@+id/tue_day_background"
+        android:background="@drawable/edit_img"
+        android:onClick="editWorkingHours"/>
+
+    <!--WENSDAY-->
+
+    <ImageView
+        android:id="@+id/wen_day_background"
+        style="@style/day_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tue_day_background" />
+
+    <TextView
+        android:id="@+id/wen_day_data"
+        style="@style/day_style"
+        android:text="01.02.2018"
+        app:layout_constraintBottom_toBottomOf="@+id/wen_day_background"
+        app:layout_constraintStart_toStartOf="@+id/wen_day_background"
+        app:layout_constraintTop_toTopOf="@+id/wen_day_background" />
+
+    <TextView
+        android:id="@+id/wen_working_hours"
+        style="@style/working_hours_style"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/wen_day_background"
+        app:layout_constraintStart_toEndOf="@+id/wen_day_data"
+        app:layout_constraintTop_toTopOf="@+id/wen_day_background" />
+
+    <ImageButton
+        android:id="@+id/wen_edit"
+        style="@style/edit_button"
+        app:layout_constraintBottom_toBottomOf="@+id/wen_day_background"
+        app:layout_constraintEnd_toEndOf="@+id/wen_day_background"
+        app:layout_constraintTop_toTopOf="@+id/wen_day_background"
+        android:background="@drawable/edit_img"
+        android:onClick="editWorkingHours"/>
+
+    <!--THURSDAY-->
+
+    <ImageView
+        android:id="@+id/thu_day_background"
+        style="@style/day_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wen_day_background" />
+
+    <TextView
+        android:id="@+id/thu_day_data"
+        style="@style/day_style"
+        android:text="01.02.2018"
+        app:layout_constraintBottom_toBottomOf="@+id/thu_day_background"
+        app:layout_constraintStart_toStartOf="@+id/thu_day_background"
+        app:layout_constraintTop_toTopOf="@+id/thu_day_background" />
+
+    <TextView
+        android:id="@+id/thu_working_hours"
+        style="@style/working_hours_style"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/thu_day_background"
+        app:layout_constraintStart_toEndOf="@+id/thu_day_data"
+        app:layout_constraintTop_toTopOf="@+id/thu_day_background" />
+
+    <ImageButton
+        android:id="@+id/thu_edit"
+        style="@style/edit_button"
+        app:layout_constraintBottom_toBottomOf="@+id/thu_day_background"
+        app:layout_constraintEnd_toEndOf="@+id/thu_day_background"
+        app:layout_constraintTop_toTopOf="@+id/thu_day_background"
+        android:background="@drawable/edit_img"
+        android:onClick="editWorkingHours"/>
+
+    <!--FRIDAY-->
+
+    <ImageView
+        android:id="@+id/fri_day_background"
+        style="@style/day_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thu_day_background" />
+
+    <TextView
+        android:id="@+id/fri_day_data"
+        style="@style/day_style"
+        android:text="01.02.2018"
+        app:layout_constraintBottom_toBottomOf="@+id/fri_day_background"
+        app:layout_constraintStart_toStartOf="@+id/fri_day_background"
+        app:layout_constraintTop_toTopOf="@+id/fri_day_background" />
+
+    <TextView
+        android:id="@+id/fri_working_hours"
+        style="@style/working_hours_style"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/fri_day_background"
+        app:layout_constraintStart_toEndOf="@+id/fri_day_data"
+        app:layout_constraintTop_toTopOf="@+id/fri_day_background" />
+
+    <ImageButton
+        android:id="@+id/fri_edit"
+        style="@style/edit_button"
+        app:layout_constraintBottom_toBottomOf="@+id/fri_day_background"
+        app:layout_constraintEnd_toEndOf="@+id/fri_day_background"
+        app:layout_constraintTop_toTopOf="@+id/fri_day_background"
+        android:background="@drawable/edit_img"
+        android:onClick="editWorkingHours"/>
+
+    <!--SATURDAY-->
+
+    <ImageView
+        android:id="@+id/sat_day_background"
+        style="@style/day_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fri_day_background" />
+
+    <TextView
+        android:id="@+id/sat_day_data"
+        style="@style/day_style"
+        android:text="01.02.2018"
+        app:layout_constraintBottom_toBottomOf="@+id/sat_day_background"
+        app:layout_constraintStart_toStartOf="@+id/sat_day_background"
+        app:layout_constraintTop_toTopOf="@+id/sat_day_background" />
+
+    <TextView
+        android:id="@+id/sat_working_hours"
+        style="@style/working_hours_style"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/sat_day_background"
+        app:layout_constraintStart_toEndOf="@+id/sat_day_data"
+        app:layout_constraintTop_toTopOf="@+id/sat_day_background" />
+
+    <ImageButton
+        android:id="@+id/sat_edit"
+        style="@style/edit_button"
+        app:layout_constraintBottom_toBottomOf="@+id/sat_day_background"
+        app:layout_constraintEnd_toEndOf="@+id/sat_day_background"
+        app:layout_constraintTop_toTopOf="@+id/sat_day_background"
+        android:background="@drawable/edit_img"
+        android:onClick="editWorkingHours"/>
+
+    <!--SUNDAY-->
+
+    <ImageView
+        android:id="@+id/sun_day_background"
+        style="@style/day_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sat_day_background" />
+
+    <TextView
+        android:id="@+id/sun_day_data"
+        style="@style/day_style"
+        android:text="01.02.2018"
+        app:layout_constraintBottom_toBottomOf="@+id/sun_day_background"
+        app:layout_constraintStart_toStartOf="@+id/sun_day_background"
+        app:layout_constraintTop_toTopOf="@+id/sun_day_background" />
+
+    <TextView
+        android:id="@+id/sun_working_hours"
+        style="@style/working_hours_style"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/sun_day_background"
+        app:layout_constraintStart_toEndOf="@+id/sun_day_data"
+        app:layout_constraintTop_toTopOf="@+id/sun_day_background" />
+
+    <ImageButton
+        android:id="@+id/sun_edit"
+        style="@style/edit_button"
+        app:layout_constraintBottom_toBottomOf="@+id/sun_day_background"
+        app:layout_constraintEnd_toEndOf="@+id/sun_day_background"
+        app:layout_constraintTop_toTopOf="@+id/sun_day_background"
+        android:background="@drawable/edit_img"
+        android:onClick="editWorkingHours"/>
+
+    <ImageView
+        android:id="@+id/target"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/kw_number"
+        app:layout_constraintEnd_toStartOf="@+id/kw_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kw_number"
+        app:srcCompat="@drawable/target"
+        android:onClick="backToCurrent"/>
+
+    <ImageView
+        android:id="@+id/forecast"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/kw_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kw_number"
+        app:layout_constraintTop_toTopOf="@+id/kw_number"
+        app:srcCompat="@drawable/forecast"
+        android:onClick="goToForecast"/>
+
+
+</android.support.constraint.ConstraintLayout>
