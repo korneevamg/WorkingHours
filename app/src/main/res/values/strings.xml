@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">WorkingHours</string>
+    <string name="app_name">Working Hours</string>
+    <string name="edit_activity">Edit Your Working Hours</string>
 </resources>

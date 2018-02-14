@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/day_background"
+        style="@style/day_background"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_data"
+        style="@style/day_style"
+        android:text="01.01.2018"
+        app:layout_constraintBottom_toBottomOf="@+id/day_background"
+        app:layout_constraintStart_toStartOf="@+id/day_background"
+        app:layout_constraintTop_toTopOf="@+id/day_background"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+        android:id="@+id/working_hours"
+        style="@style/working_hours_style"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/day_background"
+        app:layout_constraintStart_toEndOf="@+id/day_data"
+        app:layout_constraintTop_toTopOf="@+id/day_background"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <Button
+        android:id="@+id/edit"
+        style="@style/edit_button"
+        android:background="@drawable/edit_img"
+        android:onClick="editWorkingHours"
+        app:layout_constraintBottom_toBottomOf="@+id/day_background"
+        app:layout_constraintEnd_toEndOf="@+id/day_background"
+        app:layout_constraintTop_toTopOf="@+id/day_background"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Edit Working Hours -->
+        <activity
+            android:name="com.example.android.workinghours.EditWorkActivity"
+            android:label="@string/edit_activity" />
+
+        <provider
+            android:name="com.example.android.workinghours.Persistence.WHoursContentProvider"
+            android:authorities="com.example.android.workinghours"
+            android:exported="false"/>
     </application>
 
 </manifest>
